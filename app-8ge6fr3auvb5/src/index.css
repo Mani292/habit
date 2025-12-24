@@ -1,0 +1,149 @@
+/* stylelint-disable */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here.
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+    /* Calming blue-green base */
+    --background: 200 25% 98%;
+    --foreground: 200 15% 15%;
+    
+    /* Card with subtle elevation */
+    --card: 0 0% 100%;
+    --card-foreground: 200 15% 15%;
+    
+    /* Popover */
+    --popover: 0 0% 100%;
+    --popover-foreground: 200 15% 15%;
+    
+    /* Primary: Calming teal for main actions */
+    --primary: 168 76% 42%;
+    --primary-foreground: 0 0% 100%;
+    
+    /* Secondary: Soft blue for supporting elements */
+    --secondary: 200 30% 88%;
+    --secondary-foreground: 200 15% 25%;
+    
+    /* Muted: Neutral backgrounds */
+    --muted: 200 20% 94%;
+    --muted-foreground: 200 10% 45%;
+    
+    /* Accent: Very light teal for subtle highlights */
+    --accent: 168 40% 92%;
+    --accent-foreground: 168 76% 25%;
+    
+    /* Success: Green for completed habits */
+    --success: 142 76% 45%;
+    --success-foreground: 0 0% 100%;
+    
+    /* Warning: Soft red for missed habits */
+    --warning: 0 70% 65%;
+    --warning-foreground: 0 0% 100%;
+    
+    /* Destructive */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    /* Borders and inputs */
+    --border: 200 20% 88%;
+    --input: 200 20% 88%;
+    --ring: 168 76% 42%;
+    
+    /* Charts: Harmonious color palette */
+    --chart-1: 168 76% 42%;
+    --chart-2: 142 76% 45%;
+    --chart-3: 200 80% 50%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 45 90% 60%;
+    
+    /* Sidebar: Clean and minimal */
+    --sidebar-background: 200 25% 98%;
+    --sidebar-foreground: 200 15% 20%;
+    --sidebar-primary: 168 76% 42%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 200 30% 92%;
+    --sidebar-accent-foreground: 200 15% 25%;
+    --sidebar-border: 200 20% 90%;
+    --sidebar-ring: 168 76% 42%;
+  }
+
+  .dark {
+    /* Dark mode: Deep blue-gray base */
+    --background: 200 20% 10%;
+    --foreground: 200 10% 95%;
+    
+    /* Card */
+    --card: 200 18% 14%;
+    --card-foreground: 200 10% 95%;
+    
+    /* Popover */
+    --popover: 200 18% 14%;
+    --popover-foreground: 200 10% 95%;
+    
+    /* Primary: Bright teal for visibility */
+    --primary: 168 70% 50%;
+    --primary-foreground: 200 20% 10%;
+    
+    /* Secondary */
+    --secondary: 200 15% 20%;
+    --secondary-foreground: 200 10% 90%;
+    
+    /* Muted */
+    --muted: 200 15% 18%;
+    --muted-foreground: 200 10% 65%;
+    
+    /* Accent */
+    --accent: 168 40% 18%;
+    --accent-foreground: 168 70% 80%;
+    
+    /* Success */
+    --success: 142 70% 50%;
+    --success-foreground: 200 20% 10%;
+    
+    /* Warning */
+    --warning: 0 65% 60%;
+    --warning-foreground: 200 20% 10%;
+    
+    /* Destructive */
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 100%;
+    
+    /* Borders and inputs */
+    --border: 200 15% 22%;
+    --input: 200 15% 22%;
+    --ring: 168 70% 50%;
+    
+    /* Charts */
+    --chart-1: 168 70% 50%;
+    --chart-2: 142 70% 50%;
+    --chart-3: 200 75% 55%;
+    --chart-4: 280 60% 65%;
+    --chart-5: 45 85% 65%;
+    
+    /* Sidebar */
+    --sidebar-background: 200 20% 12%;
+    --sidebar-foreground: 200 10% 90%;
+    --sidebar-primary: 168 70% 50%;
+    --sidebar-primary-foreground: 200 20% 10%;
+    --sidebar-accent: 200 15% 18%;
+    --sidebar-accent-foreground: 200 10% 90%;
+    --sidebar-border: 200 15% 20%;
+    --sidebar-ring: 168 70% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
